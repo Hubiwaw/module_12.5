@@ -8,6 +8,9 @@ function getQuote() {
 }
 
 function createTweet(input) {
+	if (!input.length) {
+		return;
+	}
 	var data = input[0];
 
 	var quoteText = $(data.content).text().trim();
